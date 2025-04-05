@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MoodMirror</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>MoodMirror 🪞</h1>
+
+    <label for="ageGroup">Select Age Group:</label>
+    <select id="ageGroup">
+        <option value="child">Child</option>
+        <option value="teen">Teen</option>
+        <option value="adult">Adult</option>
+        <option value="senior">Senior</option>
+    </select>
+
+    <div id="camera-container">
+        <video id="video" width="400" autoplay></video>
+        <canvas id="canvas" width="400" height="300" style="display:none;"></canvas>
+    </div>
+
+    <button id="captureBtn">Analyze Mood</button>
+    <div id="result">
+        <h2>Your Mood:</h2>
+        <div id="emotionOutput">🤔</div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

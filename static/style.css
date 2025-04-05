@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f7fa;
+}
+
+#camera-container {
+    margin: 20px auto;
+}
+
+#emotionOutput {
+    font-size: 64px;
+    margin-top: 10px;
+}
